@@ -25,7 +25,7 @@
     </div>
     <header class="header">
       <div class="header__header-column">
-        <div class="header__title">Friends</div>
+        <h1 class="header__title">Friends</h1>
       </div>
       <div class="header__header-column">
         <span class="header__icon">
@@ -36,16 +36,11 @@
         </span>
       </div>
     </header>
-    <main class="freinds">
+    <main class="friends">
       <header class="friends__header">
         <div class="friends__friend friend friend--lg">
-          <div class="friend__column1">
-            <img
-              src="images/couple.jpg"
-              width="75px"
-              height="97.5px"
-              class="g-avatar friend__avatar"
-            />
+          <div class="friend__column">
+            <img src="images/couple.jpg" class="g-avatar friend__avatar" />
             <div class="friend__content">
               <span class="friend__name">Jhonson Choi</span>
               <span class="friend__status">LVolivia</span>
@@ -53,36 +48,28 @@
           </div>
         </div>
       </header>
-      <div class="friend__plus">
-        <h5 class="friends__plus-title">Plus friend</h5>
-        <div class="friend__column1">
-          <img
-            src="images/couple.jpg"
-            width="60px"
-            height="77"
-            class="g-avatar__plusfriend"
-          />
-          <div class="friend__content">
-            <span class="friend__name">Plus friend</span>
+      <div class="friends__plus">
+        <h5 class="friends__title">Plus friend</h5>
+        <div class="friends__friend friend">
+          <div class="friend__column">
+            <img src="images/couple.jpg" class="friend__avatar" />
+            <div class="friend__content">
+              <span class="friend__name">Plus friend</span>
+            </div>
           </div>
         </div>
       </div>
       <ul class="friends__list">
         <h5 class="friends__title">Friends 14</h5>
         <li class="friends__friend friend friend--lg">
-          <div class="friend__column1">
-            <img
-              src="images/couple.jpg"
-              width="60px"
-              height="77px"
-              class="g-avatar friend__avatar"
-            />
+          <div class="friend__column">
+            <img src="images/couple.jpg" class="friend__avatar" />
             <div class="friend__content">
-              <span class="friend__name">Olivia Choi</span>
+              <span class="friend__name">Olivia</span>
               <span class="friend__status">I love you</span>
             </div>
           </div>
-          <div class="friend__column2">
+          <div class="friend__column">
             <div class="friend__now-listening">
               <span>지독하게 - FTISLAND (FT.Jhonson)</span>
               <i class="fas fa-play"></i>
@@ -115,5 +102,8 @@
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">change your screen size.</span>
+    </div>
   </body>
 </html>

@@ -1,11 +1,26 @@
 @import "reset.css";
 /* 모든 값을 0으로 설정해준다 */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300,400;600&display=swap");
+/* google font에서 글꼴 불러옴 */
 @import "status-bar.css";
 @import "header.css";
+@import "nav-bar.css";
+@import "friend.css";
+@import "friends.css";
+@import "find.css";
+@import "more.css";
+@import "settings.css";
+@import "chat.css";
+@import "mobile.css";
+
+* {
+  box-sizing: border-box;
+  /* even I put padding, the box size doesn`t change. */
+  /* html,css는 기본적으로 패딩을 추가하면 원래 박스사이즈에 추가한 패딩만큼 사이즈가 늘어남. */
+}
 
 body {
-  background-color: pink;
+  background-color: white;
   padding: 10px 20px;
   color: #020202;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -14,5 +29,20 @@ body {
 
 a {
   color: inherit;
+  /* 부모요소의 색깔을 불러옴 */
+  text-decoration: none;
 }
-/* 부모요소의 색깔을 불러옴 */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+main {
+  animation: fadeIn 0.3s ease-in-out;
+}

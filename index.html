@@ -46,20 +46,17 @@
         <li class="chats__chat chat">
           <!-- there are too many child of "chats" -> so we make new component call "chat" -->
           <a href="chat.html">
-            <div class="chat__column">
-              <img
-                src="images/couple.jpg"
-                width="60px"
-                height="77px"
-                class="chat__avatar g-avatar"
-              />
-              <div class="chat__content">
-                <span class="chat__username">Lynn</span>
-                <span class="chat__preview">I`m Going home!</span>
+            <div class="chats__chat friend friend--lg">
+              <div class="friend__column">
+                <img src="images/couple.jpg" class="m-avatar friend__avatar" />
+                <div class="friend__content">
+                  <span class="friend__name">Olivia</span>
+                  <span class="friend__bottom-text">See you soon!</span>
+                </div>
               </div>
-            </div>
-            <div class="chat__column">
-              <span class="chat__timestamp">Yesterday</span>
+              <div class="friend__column">
+                <span class="chat__timestamp">March 8</span>
+              </div>
             </div>
           </a>
         </li>
@@ -74,6 +71,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">8</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
@@ -84,10 +82,13 @@
         </li>
         <li class="nav__list-item">
           <a href="more.html" class="nav__list-link">
-            <i class="fas fa-ellipsis-h"></i
-          ></a>
+            <i class="fas fa-ellipsis-h"></i>
+          </a>
         </li>
       </ul>
     </nav>
+    <div class="bigScreen">
+      <span class="bigScreen__text">change your screen size.</span>
+    </div>
   </body>
 </html>
